@@ -31,11 +31,12 @@ public class Car implements Vehicle {
 
     @Override
     public double calculateRentalCost() {
-        return 0; //TODO
+        return dailyRate*days;
     }
 
     @Override
     public void displayDetails() {
-        //TODO
+        System.out.println("The car model: "+model+", rented for "+days+" days, with a daily rate of "+dailyRate
+                +", and a total price of "+calculateRentalCost());
     }
 }
