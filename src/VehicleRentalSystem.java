@@ -11,6 +11,7 @@ public class VehicleRentalSystem {
         System.out.println("Welcome to our Vehicle Rental Service");
 
         do {
+            System.out.println();
             System.out.println("select an option from the following list: ");
             System.out.println("1) Rent a Car");
             System.out.println("2) Rent a Bike");
