@@ -39,7 +39,7 @@ public class VehicleRentalSystem {
 
                         System.out.println("Enter the number of hours you want to rent the bike:");
                         int rentalHours = input.nextInt();
-                        input.it (); // flush the input
+                        input.nextLine(); // flush the input
 
                         rentedVehicles.add(new Bike(brand, rentalHours));
 
