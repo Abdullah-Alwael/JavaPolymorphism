@@ -26,6 +26,7 @@ public class VehicleRentalSystem {
 
                         System.out.println("Enter the number of days you want to rent the car:");
                         int rentalDays = input.nextInt();
+                        input.nextLine(); // flush the input
 
                         rentedVehicles.add(new Car(model, rentalDays));
 
@@ -38,6 +39,7 @@ public class VehicleRentalSystem {
 
                         System.out.println("Enter the number of hours you want to rent the bike:");
                         int rentalHours = input.nextInt();
+                        input.it (); // flush the input
 
                         rentedVehicles.add(new Bike(brand, rentalHours));
 
@@ -50,6 +52,7 @@ public class VehicleRentalSystem {
 
                         System.out.println("Enter the number of weeks you want to rent the truck:");
                         int rentalWeeks = input.nextInt();
+                        input.nextLine(); // flush the input
 
                         rentedVehicles.add(new Truck(truckType, rentalWeeks));
 
@@ -72,8 +75,6 @@ public class VehicleRentalSystem {
                 System.out.println("Please enter a valid input");
             } catch (Exception e) {
                 System.out.println("An error occurred");
-            } finally {
-                input.nextLine(); // flush the input
             }
 
         } while (true);
