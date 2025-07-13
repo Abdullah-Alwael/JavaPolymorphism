@@ -30,11 +30,12 @@ public class Bike implements Vehicle {
 
     @Override
     public double calculateRentalCost() {
-        return 0; //TODO
+        return hourlyRate*hours;
     }
 
     @Override
     public void displayDetails() {
-        //TODO
+        System.out.println("The bike brand: "+brand+", rented for "+hours+" hours, with an hourly rate of "+hourlyRate
+                +", and a total price of "+calculateRentalCost());
     }
 }
