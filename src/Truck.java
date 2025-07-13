@@ -31,11 +31,12 @@ public class Truck implements Vehicle {
 
     @Override
     public double calculateRentalCost() {
-        return 0; //TODO
+        return weeklyRate*weeks;
     }
 
     @Override
     public void displayDetails() {
-        //TODO
+        System.out.println("The truck type: "+type+", rented for "+weeks+" weeks, with a weekly rate of "+weeklyRate
+                +", and a total price of "+calculateRentalCost());
     }
 }
